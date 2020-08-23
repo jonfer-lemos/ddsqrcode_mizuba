@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pt-br" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>DDS</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sticky-footer/">
+
+    <!-- Bootstrap core CSS -->
+
+    <link href="/assets/dist/css/bootstrap.css" rel="stylesheet">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+
+
+
+<body class="d-flex flex-column h-100">
+    <!-- Begin page content -->
+    <main role="main" class="flex-shrink-0">
+        <div class="container">
+
+            <div>
+                <img src="/img/Logo-Mizu.png" width="130px" height="40px" style="margin-top:10px;"> 
+                <!-- <a href="/index.html"><img src="/img/home_work-24px.svg" alt="" style="margin-top:10px; margin-left: 198px;"></a> -->
+            </div>
+            
+            <br>
+
+        <div id="dds">
+            <div class="list-group" >
+                
+                <a class="list-group-item list-group-item-action" style="text-align: center; font-size: 20px; background: hsla(32, 96%, 49%, 0.26);">Sumário</a>
+                <a href="/files/outros/sintese.html" class="list-group-item list-group-item-action" style="text-align: center; background: hsla(32, 43%, 55%, 0.158);" >SÍNTESE DO PROGRAMA</a>
+                <a class="list-group-item list-group-item-action"><button class="btn" style="width: 100%;" onclick="func()" id="in" value="1">PROGRAMA 5S (SEIRI)</button></a>
+                <a class="list-group-item list-group-item-action"><button class="btn" style="width: 100%;" onclick="func()" id="in" value="2">PROGRAMA 5S (SEIRI)</button></a>
+                <a class="list-group-item list-group-item-action"><button class="btn" style="width: 100%;" onclick="func()" id="in" value="3">PROGRAMA 5S (SEIRI)</button></a>
+                <a class="list-group-item list-group-item-action"><button class="btn" style="width: 100%;" onclick="func()" id="in" value="4">PROGRAMA 5S (SEIRI)</button></a>
+                <a class="list-group-item list-group-item-action"><button class="btn" style="width: 100%;" onclick="func()" id="in" value="5">PROGRAMA 5S (SEIRI)</button></a>
+                <a class="list-group-item list-group-item-action"><button class="btn" style="width: 100%;" onclick="func()" id="in" value="6">PROGRAMA 5S (SEIRI)</button></a>
+                <a class="list-group-item list-group-item-action"><button class="btn" style="width: 100%;" onclick="func()" id="in" value="7">PROGRAMA 5S (SEIRI)</button></a>
+                <a class="list-group-item list-group-item-action"><button class="btn" style="width: 100%;" onclick="func()" id="in" value="8">PROGRAMA 5S (SEIRI)</button></a>
+                <a class="list-group-item list-group-item-action"><button class="btn" style="width: 100%;" onclick="func()" id="in" value="9">PROGRAMA 5S (SEIRI)</button></a>
+                <a class="list-group-item list-group-item-action"><button class="btn" style="width: 100%;" onclick="func()" id="in" value="10">PROGRAMA 5S (SEIRI)</button></a>               
+            </div>
+
+            <script>
+                function func(){
+                    var dds = document.getElementById("in").value;
+                    if(dds <= 76)
+                    {
+                        $("#dds").load("/files/tema_"+dds+"_.html");
+                    }
+                }
+            </script>
+
+
+            <div class="container" style="align-items: center;">
+                <div class="btn-toolbar-center" role="toolbar" aria-label="Toolbar com grupos de botões" style="margin-top:30px;">
+                    <div >
+                    <button type="button" class="btn btn-secondary">1</button>
+                    <button type="button" class="btn btn-secondary">2</button>
+                    <button type="button" class="btn btn-secondary">3</button>
+                    <button type="button" class="btn btn-secondary">4</button>
+                    <button type="button" class="btn btn-secondary">5</button>
+                    <button type="button" class="btn btn-secondary">5</button>
+                    <button type="button" class="btn btn-secondary">>|</button>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+        </div>
+        
+
+    </main>
+
+    <footer class="footer mt-auto py-3">
+
+        <div class="container">
+            <span class="text-center"><a href="sesmt@mizu.com.br">SESMT Unidade Baraúna-RN</a></span>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+
+
+<!-- <a onclick="'func($(#dds).load(/files/outros/sintese.html))'" class="list-group-item list-group-item-action" >CHECKLIST PREVENTIVO</a> -->
+<!-- <script>
+    function func(){
+        $("#dds").load("/files/outros/sintese.html");
+
+    }
+</script> -->
+
+
+
+
+<!-- <a class="list-group-item list-group-item-action" style="text-align: center; font-size: 20px; background: hsla(32, 96%, 49%, 0.26);">Sumário</a>
+                <a href="/files/outros/sintese.html" class="list-group-item list-group-item-action" style="text-align: center; background: hsla(32, 43%, 55%, 0.158);" >SÍNTESE DO PROGRAMA</a>
+                <a href="/files/1.html" class="list-group-item list-group-item-action" >PROGRAMA 5S (SEIRI)</a>
+                <a href="/files/2.html" class="list-group-item list-group-item-action" >PROGRAMA 5S (SEITON)</a>
+                <a href="/files/3.html" class="list-group-item list-group-item-action" >PROGRAMA 5S (SEISO)</a>
+                <a href="/files/4.html" class="list-group-item list-group-item-action" >PROGRAMA 5S (SEIKETSU)</a>
+                <a href="/files/5.html" class="list-group-item list-group-item-action" >PROGRAMA 5S (SHITSUKE)</a>
+                <a href="/files/6.html" class="list-group-item list-group-item-action" >PERIGO X RISCO</a>
+                <a href="/files/7.html" class="list-group-item list-group-item-action" >PERCEPÇÃO DE RISCO</a>
+                <a href="/files/8.html" class="list-group-item list-group-item-action" >ANALISE PRELIMINAR DE RISCO (APR)</a>
+                <a href="/files/9.html" class="list-group-item list-group-item-action" >INSPEÇÃO PREVENTIVA / MANUTENÇÃO PREVENTIVA</a>
+                <a href="/files/10.html" class="list-group-item list-group-item-action">CHECKLIST PREVENTIVO</a> -->
