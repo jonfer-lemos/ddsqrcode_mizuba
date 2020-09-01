@@ -4,4 +4,12 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/jonfer-lemos/ddsqrcode_mizuba.git
 git push -u origin master
-                
+
+https://www.youtube.com/watch?v=ltFPc7v8j1E&t=186s
+ 
+para atualizar:
+
+git status
+git add .
+git commit -a -m "atualização"
+git push origin master
